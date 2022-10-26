@@ -23,17 +23,20 @@ const PostIdPage = () => {
     }, [])
 
     return (
+
         <div className="post__section">
             <h3>Пост с ID: {params.id}</h3>
             {isLoading
-                ? <Loader/>
-                : <div className='post__content__inner'>{post.title}: {post.body}</div> //crushes with uppercase
+                ? <Loader/> //.toUpperCase()
+                :   <div className='post__content__inner'>
+                        {post.title}: {post.body}
+                    </div>
             }
 
             <h3>Комментарии:</h3>
             {isComLoading
                 ? <Loader/>
-                : <div>
+                : <div >
                     {comments.map( comment =>
                         <div key={comment.id} className='comments'>
                             <h5>{comment.email.toUpperCase()}: {comment.name.toUpperCase()}</h5>

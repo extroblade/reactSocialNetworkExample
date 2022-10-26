@@ -1,9 +1,18 @@
 .myBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px 15px;
+
     color: teal;
+    font-family: "Calibri", serif;
     font-size: 14px;
     background: transparent;
     border: 1px solid teal;
     cursor: pointer;
 
+}
+
+.myBtn:hover{
+    background-color: #cfffe8;
 }

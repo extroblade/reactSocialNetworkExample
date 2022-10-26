@@ -3,9 +3,11 @@ import '../styles/App.css'
 
 const About = () => {
     return (
-        <a class='goToPosts' href='/posts'>
-            VK
-        </a>
+        <div className='AppRouter'>
+            <a class='goToPosts' href='/posts'>
+                VK
+            </a>
+        </div>
     );
 };
 

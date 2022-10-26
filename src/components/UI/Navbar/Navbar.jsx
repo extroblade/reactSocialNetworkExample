@@ -13,18 +13,27 @@ const Navbar = () => {
     return (
         isAuth
             ?
-            <div className='navbar'>
-                <MyButton onClick={logout}> Выйти  </MyButton>
-                <div className='navbar__links'>
-                    <Link to="/about">О сайте </Link>
-                    <Link to="/posts">Посты</Link>
+            <div className='navbar '>
+                <div onClick={logout} className='navbar__links'> Выйти  </div>
+
+                <div>
+                    <Link to="/about" className='navbar__links'>О сайте </Link>
+                </div>
+
+                <div>
+                    <Link to="/posts" className='navbar__links'>Посты</Link>
                 </div>
             </div>
             :
-            <div className='navbar'>
-                <div className='navbar__links'>
-                <Link to="/about">О сайте </Link>
-                <Link to="/posts">Посты</Link></div>
+            <div className='navbar '>
+
+                <div>
+                    <Link to="/about" className='navbar__links'>О сайте </Link>
+                </div>
+
+                <div>
+                    <Link to="/posts" className='navbar__links'>Посты</Link>
+                </div>
             </div>
 
     );
