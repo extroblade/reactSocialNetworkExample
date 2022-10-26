@@ -1,4 +1,4 @@
-import {useMemo, useState} from "react";
+import {useMemo} from "react";
 
 export const useSortedPosts = (posts, sort) => {
     const sortedPosts = useMemo(() => {

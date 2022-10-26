@@ -1,9 +1,12 @@
 .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 3px dashed teal;
-    animation: rotate 1s infinite linear;
+    animation: rotate 3s infinite linear;
 }
 
 @keyframes rotate {

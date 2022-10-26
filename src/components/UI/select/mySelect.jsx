@@ -12,7 +12,7 @@ const MySelect = ({options, defaultValue, value, onChange}) => {
                     {option.name}
                 </option>
             )}
-            </select>
+        </select>
     );
 };
 

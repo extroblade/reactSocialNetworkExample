@@ -3,20 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 
+
 }
 
 body {
-   font-family: "Calibri";
+    /*background-color: lightblue;*/
+    font-family: "Calibri";
+    /*color: white;*/
+
+
 }
 
 
 #root{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .App {
-    width: 800px;
+    width: 90vw;
+
 }
 
 .post{
@@ -26,6 +33,11 @@ body {
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
+}
+
+.post__btns{
+    display: flex;
+
 }
 
 
@@ -42,4 +54,87 @@ body {
 .post-exit-active {
     transform: translateX(-350px);
     transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page__current {
+    border: 2px solid blue;
+}
+
+.sorter {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goToPosts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid teal;
+
+    padding: 1px 20px;
+
+    text-decoration: none;
+    color: teal;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.navbar{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: cornflowerblue;
+    font-family: "Calibri", serif;
+
+}
+
+.navbar__links{
+    margin-left: auto;
+    text-decoration: none;
+
+}
+
+.post__section{
+
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.post__content__inner{
+    border: 3px solid teal;
+    margin: 15px;
+    padding: 10px;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid teal;
+
 }
