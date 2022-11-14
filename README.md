@@ -1,2 +1,3 @@
-# reactLearn
-react
+# React Social Network
+react SPA with posts from free api
+//
